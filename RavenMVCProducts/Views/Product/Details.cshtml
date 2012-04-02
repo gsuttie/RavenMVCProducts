@@ -1,0 +1,60 @@
+﻿@model RavenMVCProducts.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Product</legend>
+
+    <div class="display-label">CategoryId</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CategoryId)
+    </div>
+
+    <div class="display-label">SupplierId</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.SupplierId)
+    </div>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">Code</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Code)
+    </div>
+
+    <div class="display-label">StandardCost</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StandardCost)
+    </div>
+
+    <div class="display-label">ListPrice</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ListPrice)
+    </div>
+
+    <div class="display-label">UnitsOnStock</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UnitsOnStock)
+    </div>
+
+    <div class="display-label">UnitsOnOrder</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.UnitsOnOrder)
+    </div>
+
+    <div class="display-label">Discontinued</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Discontinued)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
